@@ -1,0 +1,19 @@
+# Site settings
+title: swigg blog
+email: dustins@swigg.net
+description: > # this means to ignore newlines until "baseurl:"
+  Ideas with the benefit of over a decade of programming <del>failures</del> experience.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://blog.swigg.net" # the base hostname & protocol for your site
+twitter_username: dpsweigart
+github_username:  dustins
+
+# Build settings
+markdown: redcarpet
+redcarpet:
+  extensions:
+    - hard_wrap
+    - no_intra_emphasis
+    - autolink
+    - strikethrough
+    - fenced_code_blocks
