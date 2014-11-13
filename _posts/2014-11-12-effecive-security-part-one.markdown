@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Effective Security: Part 1"
-date:   2014-11-12 19:37:09
+date:   2014-11-12 19:40:00
 categories: code
 published: true
 tags: java spring shiro
