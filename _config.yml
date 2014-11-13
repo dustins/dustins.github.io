@@ -1,6 +1,5 @@
 # Site settings
 title: swigg blog
-email: dustins@swigg.net
 description: > # this means to ignore newlines until "baseurl:"
   Ideas with the benefit of over a decade of programming <del>failures</del> experience.
 baseurl: "" # the subpath of your site, e.g. /blog/
