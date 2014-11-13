@@ -35,9 +35,9 @@ Without a very simple, or impossibly well thought-out project, new roles or func
 
 I _&laquo;shudder&raquo;_ just thinking about it.
 
-One of my biggest beefs with Spring Security is the slightly disparate way they want you to handle controlling access. Spring Security is full featured out of the box, but is more likely to cause you to write a hodgepodge of role checking for course grained authorization, and slowly roll in ACL checking for individual resources as your project grows.
+One of my biggest beefs with Spring Security is the slightly disparate way they want you to handle controlling access. Spring Security is full featured out of the box, but is more likely to cause you to write a hodgepodge of role checking for coarse grained authorization, and slowly roll in ACL checking for individual resources as your project grows.
 
-Shiro not only discourages the false start of implicit roles, but provides an alternative path forward that can be used consistently for course and fine grained authorization.
+Shiro not only discourages the false start of implicit roles, but provides an alternative path forward that can be used consistently for coarse and fine grained authorization.
 
 ## The Basics
 
