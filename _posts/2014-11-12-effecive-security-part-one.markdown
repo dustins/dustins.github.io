@@ -96,9 +96,7 @@ public ModelAndView read(Article article, Subject subject) {
 
 ## Working Example
 
-If you're looking for a working example of this, definitely take a look at the mechanics of [SecurityTest][security-test].
-
-I welcome everyone to check out my [example project][swigg-security-example] to check out specifics of these classes and to see how I do the plumbing with Shiro, but to keep this post short, I'm going to forego explaining that stuff. So lets get started with how we can combine the basic concepts into a security check.
+If you're looking for a working example of this, definitely take a look at [SecurityTest][security-test] which is included in my [example project][swigg-security-example] for a more complete understanding of these classes, and to see how I do the plumbing with Shiro. But to keep this post short, I'm going to forego explaining that stuff. So lets get started with how we can combine the basic concepts into a security check.
 
 The first thing we can do is create some roles…
 
@@ -156,7 +154,7 @@ subject.isPermitted(ArticlePermission.update(article1)); // false
 subject.isPermitted(ArticlePermission.update(article2)); // true
 {% endhighlight %}
 
-You can see that Kermit is able to do everything, which all stems from the `*:*:*` permission he has since he is an admin. Fozzy however only have `article:read:*` and `article:read,update:article-2` so he can't update all articles, or article1.
+You can see that Kermit is able to do everything, which all stems from the `*:*:*` permission he has since he is an admin. Fozzy however only has `article:read:*` and `article:read,update:article-2` so he can only update article-2.
 
 ## Conclusion
 
